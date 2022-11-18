@@ -28,6 +28,14 @@ margin-right:auto;
 .btn-outline:hover{
     background-color: var(--primary);
 }
+.btn-filled{
+    font-size:17px;
+    font-weight:500;
+    color: FFFFFF;
+    padding: 12px 53px;
+    border-radius:10px;
+
+}
 /* Header Area */
 .navbar .container-custom{
     display: flex;
@@ -47,10 +55,10 @@ margin-right:auto;
     color:var(--primary)!important;
 }
 /* Backround Image */
-.bg-img {
+/* .bg-img { 
     z-index:-1;
     height:100vh;
     background-image:url('../UI\ pics/wallpaperflare.com_wallpaper.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
+} */
