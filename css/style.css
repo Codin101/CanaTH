@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Taprom&family=Ubuntu:wght@300&display=swap');
 /* basic stylings */
-:root{
-    --primary: FFFFFF ;
-    --secondary: 000000
-}
+
 body{
     font-family: 'Ubuntu',
     sans-serif;
     font-size: 32px;
-    color: var(--secondary)
+    color: var(black)
 }
 .container-custom{
 max-width: 1440px;
@@ -18,6 +15,13 @@ width: 100%;
 margin-left:auto;
 margin-right:auto;
 
+}
+.p-section{
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.pt-section{
+    padding-top: 80px;
 }
 .btn-outline{
     color: var(--primary);
@@ -34,7 +38,9 @@ margin-right:auto;
     color: FFFFFF;
     padding: 12px 53px;
     border-radius:10px;
-
+}
+.bg-white{
+    background-color: white;
 }
 /* Header Area */
 .navbar .container-custom{
@@ -62,3 +68,5 @@ margin-right:auto;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 } */
+/* Hero Area */
+
