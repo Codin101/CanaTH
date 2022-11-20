@@ -1,0 +1,687 @@
+/*---------------------------------------------------------------
+
+    Template Name: Bestbook - Ebook Landing HTML Template
+    Template URL: [demo url]
+    Description: This is a landing page for E-book made with bootstrap 5
+    Author: Digitshack
+    Author URL: https://themeforest.net/user/digitshack
+    Version: 1.0
+
+-----------------------------------------------------------------
+
+    CSS INDEX
+    ==================
+
+    1. Basic Styles
+    2. Header Area
+    3. Hero Area
+    4. Stats Area
+    5. About Area
+    6. Testimonial Area
+    7. Pricing Area
+    8. Call To Action Area
+    9. Footer
+    10. Responsiveness
+
+----------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*================================= 
+* 1. Basic Styles
+==================================*/
+:root {
+    --primary: #263E56;
+    --secondary: #637B92;
+}
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 15px;
+    color: var(--secondary);
+}
+
+p {
+    line-height: 30px;
+    font-size: 15px;
+    color: var(--secondary);
+}
+
+.container-custom {
+    max-width: 1650px;
+    width: 100%;
+    padding: 0 .75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-cyan {
+    background-color: #E4F5FE;
+}
+
+.p-section {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+
+.pt-section {
+    padding-top: 80px;
+}
+
+.pb-title {
+    padding-bottom: 50px;
+}
+
+.mt-section {
+    margin-top: 70px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 66px;
+    color: var(--primary);
+    padding-bottom: 20px;
+}
+
+.btn-outline {
+    color: var(--primary);
+    padding: 12px 55px;
+    border: 2px solid var(--primary);
+    border-radius: 7px;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: #FFF;
+}
+
+.btn-filled {
+    font-size: 17px;
+    font-weight: 500;
+    color: #FFF;
+    background-color: var(--primary);
+    padding: 12px 53px;
+    border-radius: 10px;
+}
+
+.btn-filled:hover {
+    color: #dcdcdc;
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background-color: #FFF;
+}
+
+.preloader-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*================================= 
+* 2. Header Area
+==================================*/
+
+.navbar .container-custom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-item a {
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    color: var(--primary) !important;
+}
+
+/*================================= 
+* 3. Hero Area
+==================================*/
+
+.hero.bg-cyan {
+    border-radius: 38px;
+}
+
+.site-title {
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 92px;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.site-desc {
+    font-size: 18px;
+    line-height: 37px;
+    color: #273F57;
+    margin-bottom: 40px;
+}
+
+.hero-btns p,
+.hero-btns p a {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--primary);
+}
+
+.hero-btns p a:hover {
+    color: #000;
+}
+
+/*================================= 
+* 4. Stats Area
+==================================*/
+
+.stats {
+    padding-top: 90px;
+    padding-bottom: 120px;
+}
+
+.stat-num {
+    color: var(--primary);
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+}
+
+.stat-title {
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 35px;
+}
+
+.stat-num::before {
+    position: absolute;
+    z-index: -1;
+    left: -17px;
+    top: -30px;
+}
+
+.single-stat:nth-child(1) .stat-num::before {
+    content: url(../img/blob1.svg);
+}
+
+.single-stat:nth-child(2) .stat-num::before {
+    content: url(../img/blob2.svg);
+}
+
+.single-stat:nth-child(3) .stat-num::before {
+    content: url(../img/blob3.svg);
+}
+
+/*================================= 
+* 5. About Area
+==================================*/
+
+.about {
+    padding-bottom: 175px;
+}
+
+.author {
+    position: relative;
+}
+
+.author img {
+    margin-left: 90px;
+    border: 10px solid #FFF;
+    border-radius: 50px;
+}
+
+.author::before {
+    content: '';
+    position: absolute;
+    background-color: #E4F5FE;
+    height: 130%;
+    width: 390px;
+    top: -15%;
+    border-radius: 50px;
+    z-index: -9;
+}
+
+.social .list-inline-item:not(:last-child) {
+    margin-right: 25px;
+}
+
+.social li a {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.social li a:hover {
+    color: var(--secondary);
+}
+
+/*================================= 
+* 6. Testimonial Area
+==================================*/
+
+.control {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.next,
+.prev {
+    padding: 17px 28px;
+    background-color: #FFF;
+    color: var(--primary);
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 11px rgba(190, 233, 255, 0.25);
+    transition: all .3s ease;
+}
+
+.next:hover,
+.prev:hover {
+    background: var(--primary);
+    color: #FFF;
+}
+
+.prev {
+    border-radius: 8px 0 0 8px;
+}
+
+.next {
+    border-radius: 0 8px 8px 0;
+}
+
+.control svg {
+    width: 22px;
+}
+
+.test-img img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.test-img {
+    position: relative;
+}
+
+.test-img::after {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: 2px solid;
+    left: -4px;
+    top: -4px;
+}
+
+.single-test {
+    background: #FFF;
+    box-shadow: 0px 9px 18px -2px rgba(190, 233, 255, 0.29);
+    border-radius: 13px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+.single-test .meta h5 {
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 0px;
+}
+
+.single-test .meta p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.single-test p {
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.slider {
+    margin-top: -130px;
+}
+
+.test-head {
+    padding-bottom: 150px;
+}
+
+.tns-item {
+    padding-right: 35px;
+    padding-left: 5px;
+    margin-bottom: 33px;
+}
+
+.tns-outer {
+    margin-right: -50%;
+}
+
+.testimonial {
+    overflow: hidden;
+    user-select: none;
+}
+
+.single-test-wrapper:nth-child(n) .single-test {
+    border: 1px solid #F2B4B7
+}
+
+.single-test-wrapper:nth-child(n) .test-img::after {
+    border-color: #F2B4B7
+}
+
+.single-test-wrapper:nth-child(2n) .single-test {
+    border: 1px solid #BDB6FD
+}
+
+.single-test-wrapper:nth-child(2n) .test-img::after {
+    border-color: #BDB6FD
+}
+
+.single-test-wrapper:nth-child(3n) .single-test {
+    border: 1px solid #F9CF80
+}
+
+.single-test-wrapper:nth-child(3n) .test-img::after {
+    border-color: #F9CF80
+}
+
+/*================================= 
+* 7. Pricing Area
+==================================*/
+
+.package {
+    border-radius: 38px;
+}
+
+.pricing-card {
+    background: #FFF;
+    border-radius: 24px;
+    padding: 4rem;
+    transition: all .3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: translateY(-15px);
+}
+
+.pricing-icon {
+    margin: 50px 0;
+}
+
+.pricing-icon i {
+    font-size: 40px;
+    position: relative;
+}
+
+.pricing-icon i::before {
+    z-index: 99;
+    position: relative;
+}
+
+.pricing-icon i::after {
+    content: '';
+    position: absolute;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: 3px solid;
+    left: -58%;
+    top: -76%;
+    z-index: 0;
+}
+
+.pricing-card-container:nth-child(1) .pricing-icon i::before {
+    color: #BDB6FD;
+}
+
+.pricing-card-container:nth-child(1) .pricing-icon i::after {
+    border-color: #BDB6FD;
+}
+
+.pricing-card-container:nth-child(2) .pricing-icon i::before {
+    color: #F2B4B7;
+}
+
+.pricing-card-container:nth-child(2) .pricing-icon i::after {
+    border-color: #F2B4B7;
+}
+
+.pricing-card-container:nth-child(3) .pricing-icon i::before {
+    color: #F9CF80;
+}
+
+.pricing-card-container:nth-child(3) .pricing-icon i::after {
+    border-color: #F9CF80;
+}
+
+.pricing-plan {
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--primary);
+    margin: 60px 0;
+}
+
+.pricing {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.pricing span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pricing-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+
+.pricing-list li {
+    padding: 14px 0;
+}
+
+.pricing-list li:not(:last-child) {
+    border-bottom: 1px dashed #637B92;
+}
+
+/*================================= 
+* 8. Call To Action Area
+==================================*/
+
+a.btn-solid {
+    background: var(--primary);
+    padding: 13px 52px;
+    border-radius: 7px;
+    color: #FFF;
+    border: 2px solid transparent;
+}
+
+a.btn-solid:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+/*================================= 
+* 9. Footer
+==================================*/
+
+.footer {
+    background: var(--primary);
+    text-align: center;
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    position: relative;
+    padding: 7px;
+}
+
+.footer-menu li:not(:last-child)::after {
+    content: '/';
+    position: absolute;
+    color: #FFF;
+    right: -5px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #C6C6C6;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+.footer-menu li a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 0;
+}
+
+.copyright p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #d7d7d7;
+    margin-bottom: 0;
+}
+
+.copyright p a {
+    color: #FFF;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.copyright p a:hover {
+    text-decoration: underline;
+}
+
+/*================================= 
+* 10. Responsiveness
+==================================*/
+
+@media only screen and (max-width: 992px) {
+    .author {
+        margin-bottom: 145px;
+    }
+
+    .author img {
+        margin: 0;
+    }
+
+    .author::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .about {
+        padding-bottom: 74px;
+    }
+
+    .tns-outer {
+        margin-right: 0;
+    }
+
+    .tns-item {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    p {
+        line-height: 26px;
+    }
+
+    .p-section {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .pt-section {
+        padding-top: 60px;
+    }
+
+    .pb-title {
+        padding-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 36px;
+        line-height: 51px;
+        padding-bottom: 12px;
+    }
+
+    .site-title {
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+    .site-desc {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .btn-filled {
+        font-size: 15px;
+        padding: 13px;
+    }
+
+    .hero-btns p,
+    .hero-btns p a {
+        font-size: 15px;
+    }
+
+    .pricing-card {
+        padding: 1rem 1rem 2rem;
+    }
+
+    .pricing {
+        font-size: 45px;
+    }
+
+    .pricing-plan {
+        font-size: 21px;
+        margin: 37px 0;
+    }
+
+    .pricing-icon i {
+        font-size: 27px;
+    }
+
+    .pricing-icon i::after {
+        height: 75px;
+        width: 75px;
+        left: -75%;
+        top: -86%;
+    }
+}
