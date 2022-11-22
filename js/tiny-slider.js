@@ -1,5 +1,4 @@
 'use strict';
-
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var win = window;
@@ -3663,4 +3662,5 @@ var tns = function (options) {
   };
 };
 
-exports.tns = tns;
+const _tns = tns;
+export { _tns as tns };
