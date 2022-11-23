@@ -48,3 +48,9 @@ body{
 .nav-item a:hover{
     color:var(--secondary)!important;
 }
+.bg-img{
+    background-image: url('../img/wallpaperflare.com_wallpaper.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
