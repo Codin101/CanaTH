@@ -3,7 +3,7 @@
 /* Basic Stylings */
 :root{
     --secondary: black;
-    --primary: white;
+    --primary: hwb(0 60% 40% / 0.422);
 }
 body{
     font-family: 'Ubuntu',
@@ -11,4 +11,40 @@ body{
     font-size: small;
     color: var(--secondary);
 }
+.container-custom{
+    max-width: 1440px;
+    width: 100%;
+    max-height: 1024px;
+    height: 100%;
+    padding: 0 0.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-outline{
+    color:var(--primary);
+    padding:4px 12px;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+}
+.btn-outline:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+}
 /* Header Area */
+.navbar .container-custom{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item{
+    padding: 0 10px;
+}
+.nav-item a{
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 15px;
+}
+.nav-item a:hover{
+    color:var(--secondary)!important;
+}
