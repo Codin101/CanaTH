@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taprom&family=Ubuntu:wght@300;400&display=swap');
 
 /* Basic Stylings */
 :root{
     --secondary: black;
     --primary: hwb(0 60% 40% / 0.422);
+    --secondaryA: white;
 }
 body{
     font-family: 'Ubuntu',
@@ -51,6 +52,7 @@ body{
 .bg-img{
     background-image: url('../img/wallpaperflare.com_wallpaper.jpg');
     height: 100vh;
+    border-radius: 5px 5px 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -70,6 +72,7 @@ body{
     position: absolute;
     top: 320px;
     right: 320px;
+    color: var(--secondaryA);
 }
 .btn-roundbtmright{
     background-image: url('../img/istockphoto-1161409422-612x612.jpg');
@@ -86,5 +89,17 @@ body{
     position: absolute;
     top: 320px;
     right: 190px;
+    color: var(--secondaryA);
 }
+/* Middle of the page text */
+.hero-text{
+    position: absolute;
+    top: 270px;
+    right: 140px;
+    font-family: 'Ubuntu',
+    sans-serif;
+    font-size: small;
+    color: var(--secondaryA);
+}
+
 /* full border radius gia na nai kuklos,2buttons se ena div(display flex justify content space between)sta buttons bg image auta pou thelw(position absolute bottom i top 0) */
