@@ -49,14 +49,22 @@ body{
 .nav-item a:hover{
     color:var(--secondary)!important;
 }
-.bg-img{
+/* Background Images in the UI's */
+.bg-img-homepage{
     background-image: url('../img/wallpaperflare.com_wallpaper.jpg');
     height: 100vh;
     border-radius: 5px 5px 0px 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* Rounded buttons */
+.bg-img-medical{
+    background-image: url('../img/crystalweed-cannabis-rLR4smahG2Q-unsplash.jpg');
+    height: 100vh;
+    border-radius: 5px 5px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Rounded buttons Start Here */
 .btn-roundbtmleft{
     background-image: url('../img/istockphoto-483300738-612x612.jpg');
     height: 100vh;
@@ -91,6 +99,7 @@ body{
     right: 190px;
     color: var(--secondaryA);
 }
+/* Rounded buttons End Here */
 /* Middle of the page text */
 .hero-text{
     position: absolute;
@@ -101,5 +110,58 @@ body{
     font-size: small;
     color: var(--secondaryA);
 }
-
-/* full border radius gia na nai kuklos,2buttons se ena div(display flex justify content space between)sta buttons bg image auta pou thelw(position absolute bottom i top 0) */
+/* Link styleCSS inside of the buttons in the homepage UI starts here */
+.btn-roundbtmleft a:link,a:visited{
+    color: var(--secondaryA);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-roundbtmleft a:hover,a:active{
+    color: var(--secondary);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-roundbtmright a:link,a:visited{
+    color: var(--secondaryA);
+    font-weight: 500;
+    text-decoration: none;
+}
+.btn-roundbtmright a:hover,a:active{
+    color: var(--secondary);
+    font-weight: 500;
+    text-decoration: none;
+}
+/* Fast redirect buttons start here */
+.btn-back{
+    position: absolute;
+    top: 380px;
+    right: 560px;
+    font-size: 20px;
+    color: var(--secondaryA);
+}
+.btn-forward{
+    position: absolute;
+    top: 380px;
+    right: 10px;
+    font-size: 20px;
+    color: var(--secondaryA);
+}
+/* Fast redirect buttons end here */
+/* Link styleCSS of the fast redirect buttons starts here */
+.btn-back a:link,a:visited{
+    color: var(--secondaryA);
+    text-decoration: none;
+}
+.btn-back a:hover,a:active{
+    color: var(--secondary);
+    text-decoration: none;
+}
+.btn-forward a:link,a:visited{
+    color: var(--secondaryA);
+    text-decoration: none;
+}
+.btn-forward a:hover,a:active{
+    color: var(--secondary);
+    text-decoration: none;
+}
+/* Link styleCSS of the fast redirect buttons starts here */
