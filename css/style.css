@@ -64,6 +64,13 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.bg-img-recreational{
+    background-image: url('../img/50611572757_31f130c33d_h.jpg');
+    height: 100vh;
+    border-radius: 5px 5px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* Rounded buttons Start Here */
 .btn-roundbtmleft{
     background-image: url('../img/istockphoto-483300738-612x612.jpg');
@@ -116,15 +123,42 @@ body{
     font-size: small;
     color: var(--secondaryA)!important;
 }
+
 /* Styling of text in the hero of medical UI starts here */
 .mid-bottomright{
     position: absolute;
     top: 250px;
     right: 100px;
+    list-style-position: inside;
     font-size: 10px;
     color: var(--secondaryA);
 }
 /* Styling of text in the hero of medical UI ends here */
+/* Styling of text in the hero of recreational UI starts here */
+.top-midleft{
+    position: absolute;
+    top: 165px;
+    right: 365px;
+    list-style-position: inside;
+    font-size: 10px;
+    color: var(--secondaryA);
+}
+.bottom-midleft{
+    position: absolute;
+    top: 265px;
+    right: 365px;
+    list-style-position: inside;
+    font-size: 10px;
+    color: var(--secondaryA);
+}
+.proceed-text{
+    position: absolute;
+    top: 388px;
+    right: 50px;
+    font-size: 10px;
+    color: var(--secondaryA);
+}
+/* Styling of text in the hero of recreational UI ends here */
 /* Text stylings end here */
 /* Link styleCSS of the rounded buttons in the homepage UI starts here */
 .btn-roundbtmleft a:link,a:visited{
