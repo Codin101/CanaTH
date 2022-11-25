@@ -100,7 +100,7 @@ body{
     color: var(--secondaryA);
 }
 /* Rounded buttons End Here */
-/* Middle of the page text */
+/* Text stylings start here */
 .hero-text{
     position: absolute;
     top: 270px;
@@ -110,7 +110,23 @@ body{
     font-size: small;
     color: var(--secondaryA);
 }
-/* Link styleCSS inside of the buttons in the homepage UI starts here */
+.top-left-text{
+    font-family: 'Ubuntu',
+    sans-serif;
+    font-size: small;
+    color: var(--secondaryA)!important;
+}
+/* Styling of text in the hero of medical UI starts here */
+.mid-bottomright{
+    position: absolute;
+    top: 250px;
+    right: 100px;
+    font-size: 10px;
+    color: var(--secondaryA);
+}
+/* Styling of text in the hero of medical UI ends here */
+/* Text stylings end here */
+/* Link styleCSS of the rounded buttons in the homepage UI starts here */
 .btn-roundbtmleft a:link,a:visited{
     color: var(--secondaryA);
     font-weight: 500;
@@ -131,7 +147,8 @@ body{
     font-weight: 500;
     text-decoration: none;
 }
-/* Fast redirect buttons start here */
+/* Link styleCSS of the rounded buttons in the homepage UI ends here */
+/* Fast redirect buttons starts here */
 .btn-back{
     position: absolute;
     top: 380px;
@@ -146,7 +163,7 @@ body{
     font-size: 20px;
     color: var(--secondaryA);
 }
-/* Fast redirect buttons end here */
+/* Fast redirect buttons ends here */
 /* Link styleCSS of the fast redirect buttons starts here */
 .btn-back a:link,a:visited{
     color: var(--secondaryA);
