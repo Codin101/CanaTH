@@ -72,6 +72,13 @@ body{
     background-repeat: no-repeat;
 }
 .bg-img-recreationalstore{
+    background-image: url('../img/jeff-w-tgC4LX_8MIA-unsplash\ \(1\).jpg');
+    height: 100vh;
+    border-radius: 5px 5px 0px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-img-medicalstore{
     background-image: url('../img/CBD-Oil-Life-changing-or-Just-Another-Health-Trend---What-is-CBD.webp');
     height: 100vh;
     border-radius: 5px 5px 0px 0px;
