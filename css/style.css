@@ -65,7 +65,7 @@ body{
     height: 100px;
     position: absolute;
     top: 100px;
-    right: 450px;
+    right: 440px;
     color: var(--secondaryA);
 }
 /* Images in the UI's end here */
@@ -207,7 +207,7 @@ body{
 .aboutphysicalstore-text{
     position: absolute;
     top: 100px;
-    right: 100px;
+    right: 95px;
     font-size: 5px;
     color: var(--secondary);
 }
@@ -269,10 +269,10 @@ body{
     text-decoration: none;
 }
 /* Link styleCSS of the fast redirect buttons starts here */
-/* Social of the shop(Instragram etc start here) */
+/* Social of the actual shop(Instragram etc) start here */
 .social .list-inline-item{
     position: relative;
-    left: 165px;
+    left: 170px;
     top: 45px;
     font-size: 20px;
 }
@@ -282,4 +282,4 @@ body{
 .social li a:hover{
     color: var(--secondary);
 }
-/* Social of the shop(Instragram etc end here) */
+/* Social of the actual shop(Instragram etc) end here */
