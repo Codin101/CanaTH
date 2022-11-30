@@ -25,13 +25,37 @@ body{
     font-family: 'Taprom',
     cursive;
 }
+/* Testimonial area starts here */
 /* sliding through the critics starts here */
 .testimonial{
     position: absolute;
-    top: 190px;
+    top: 210px;
     right: 300px;
 }
+.control{
+font-size: 5px;
+color: var(--secondaryA);
+}
+.next,
+.prev{
+    padding-inline:4px 3px;
+    background-color: var(--primary);
+    position: relative;
+    left: 230px;
+    top: -75px;
+    margin-right: 5px;
+    cursor:pointer;
+}
+.next:hover,
+.prev:hover{
+    color: var(--secondary);
+    transition: all 1s ease;
+}
+.control svg{
+    width: 15px;
+}
 /* sliding through the critics ends here */
+/* Testimonial area ends here */
 .btn-outline{
     color:var(--primary);
     padding:4px 12px;
